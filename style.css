@@ -1,0 +1,188 @@
+/* ===== ESTILOS GLOBAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.highlight {
+    color: #4285F4;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.menu a.button {
+    background-color: #4285F4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #616161;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Full-width Image */
+.full-width-image {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cards Section */
+.questions {
+    padding: 50px 5%;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: #4285F4;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #616161;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-top: 1px solid #E0E0E0;
+    color: #616161;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    .menu a {
+        margin: 5px 10px;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .full-width-image img {
+        max-height: 150px;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
+}
