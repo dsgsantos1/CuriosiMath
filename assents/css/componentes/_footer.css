@@ -1,0 +1,56 @@
+.footer {
+    background-color: var(--cinza-claro);
+    border-top: 1px solid var(--cinza-borda);
+    padding: 2rem var(--padding-padrao);
+    text-align: center;
+    margin-top: auto; /* Fixa no rodapé quando há pouco conteúdo */
+  }
+  
+  .footer p {
+    color: var(--cinza-texto);
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    color: var(--azul);
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: var(--azul-escuro);
+  }
+  
+
+/* Garante que o footer fique no final */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa pelo menos a altura da tela */
+  }
+  
+  .main-content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+  }
+  
+  .footer {
+    margin-top: auto; /* Empurra o footer para baixo */
+    background-color: var(--cinza-claro);
+    border-top: 1px solid var(--cinza-borda);
+    padding: 2rem var(--padding-padrao);
+    text-align: center;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

@@ -1,0 +1,12 @@
+.author-card {
+    display: flex;
+    background: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .author-card {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,32 @@
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--raio-borda);
+  }
+  
+  .img-round {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .img-with-caption {
+    margin: 1.5rem 0;
+  }
+  
+  .img-with-caption figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    margin-top: 0.5rem;
+  }
+  
+  /* Efeitos */
+  .img-hover-zoom {
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+  
+  .img-hover-zoom:hover {
+    transform: scale(1.03);
+  }

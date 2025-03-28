@@ -1,0 +1,15 @@
+/* Base */
+@import './base/_reset.css';
+@import './base/_variables.css';
+@import './base/_typography.css';
+
+/* Components */
+@import './componentes/_cards.css';
+@import './componentes/_header.css';
+@import './componentes/_footer.css';
+@import './componentes/_buttons.css';
+@import './componentes/_images.css';
+
+/* Pages */
+@import './pages/_home.css';
+@import './pages/_curiosidades.css';

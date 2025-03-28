@@ -1,0 +1,25 @@
+:root {
+  /* Cores */
+  --azul: #4285F4;
+  --azul-escuro: #3367D6;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza-claro: #F5F5F5;
+  --cinza-texto: #616161;
+  --cinza-borda: #E0E0E0;
+
+  /* Fontes */
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-secundaria: 'Arial', sans-serif;
+  --peso-regular: 400;
+  --peso-bold: 700;
+
+  /* Espaçamentos */
+  --padding-padrao: 20px 5%;
+  --margin-pequena: 0.5rem;
+  --margin-grande: 2rem;
+
+  /* Bordas */
+  --raio-borda: 8px;
+  --sombra-box: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

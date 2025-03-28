@@ -1,0 +1,29 @@
+/* Remove estilos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+/* Garante altura mínima e fonte base */
+body {
+  min-height: 100vh;
+  font-family: var(--fonte-principal);
+  line-height: 1.6;
+}
+
+/* Reset de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

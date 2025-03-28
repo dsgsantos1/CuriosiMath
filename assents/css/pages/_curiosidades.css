@@ -1,0 +1,92 @@
+/* ===== ESTRUTURA DA PÁGINA ===== */
+.page-header {
+    text-align: center;
+    padding: 60px 5% 30px;
+    background-color: var(--cinza-claro);
+    margin-bottom: 30px;
+  }
+  
+  .page-header h2 {
+    font-size: 2.2rem;
+    color: var(--azul);
+  }
+  
+  .page-subtitle {
+    color: var(--cinza-texto);
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  /* ===== CARDS ===== */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 5% 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: var(--branco);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-box);
+    padding: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--cinza-borda);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    color: var(--azul);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    color: var(--cinza-texto);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .card-button {
+    display: inline-block;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: var(--raio-borda);
+    font-weight: var(--peso-bold);
+    transition: background 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: var(--azul-escuro);
+  }
+  
+  /* ===== RESPONSIVIDADE ===== */
+  @media (max-width: 900px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .page-header {
+      padding: 40px 5% 20px;
+    }
+    
+    .cards-container {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 0 5% 30px;
+    }
+    
+    .card {
+      padding: 20px;
+    }
+  }

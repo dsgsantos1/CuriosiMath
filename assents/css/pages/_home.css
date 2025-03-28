@@ -1,0 +1,37 @@
+/* BANNER */
+.full-width-banner {  /* <- Classe corrigida para bater com seu HTML */
+    width: 100%;
+    overflow: hidden;
+    max-height: 300px;
+    margin-bottom: 20px; /* Adicionei espaçamento abaixo do banner */
+  }
+  
+  .full-width-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: var(--cinza-claro);
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 40px 20px;
+    }
+    
+    .full-width-banner {  /* <- Classe corrigida aqui também */
+      max-height: 200px;
+    }
+  }
