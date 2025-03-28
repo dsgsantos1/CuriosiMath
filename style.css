@@ -157,6 +157,76 @@ a {
     color: #616161;
 }
 
+
+/* ===== SOBRE ===== */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.about-hero h2 {
+    font-size: 1.8rem;
+    color: #616161;
+    font-weight: 300;
+}
+
+.about-content article {
+    margin-bottom: 40px;
+}
+
+.about-content h3 {
+    color: #4285F4;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.about-content p {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #F5F5F5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.author-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4285F4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .author-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
     .header {
